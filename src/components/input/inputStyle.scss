@@ -1,0 +1,21 @@
+$placeholderColor: #000;
+
+input{
+  width: 100%;
+  border: none;
+  padding: 10px  10px 0 5px;
+  outline: none;
+  border-bottom: 2px solid lightgray;
+  background-color: inherit;
+  color: #fff;
+
+  &::placeholder {color: $placeholderColor}
+  &:focus::placeholder {
+    transform: translateY(-20px);
+    transition: 0.4s;
+    font-size: 10px;
+  }
+  &::placeholder {
+    color: #fff;
+  }
+}

@@ -1,0 +1,43 @@
+.todo__item{
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px 30px;
+  display: flex;
+  width: 1000px;
+  align-items: center;
+  justify-content: space-between;
+  color: #455f9a;
+  font-size: 50px;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+  margin: 0 auto 5px;
+
+  &:hover{
+    width: 1010px;
+    transition: .5s;
+  }
+
+  .todo__text{
+    font-size: 25px;
+  }
+  .todo__completed{
+    display: flex;
+    align-items: center;
+
+    .todo__checkbox{
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+    .todo__button {
+      background-color: inherit;
+      cursor: pointer;
+      padding: 0;
+      border: none;
+      margin-left: 5px;
+      font-size: 30px;
+      &:hover{
+        color: red;
+      }
+    }
+  }
+}
