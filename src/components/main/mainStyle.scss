@@ -1,11 +1,14 @@
 main{
+  padding-top: 105px;
+  padding-bottom: 30px;
   .drop__menu__window{
-    position: absolute;
+    position: fixed;
     width: 500px;
     height: 200px;
     left: 33%;
     border-radius: 0 0 50px 50px;
     transition: 0.5s;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   }
   .drop__menu__window_content{
     width: 100%;
@@ -54,6 +57,7 @@ main{
   }
   .menu__closed{
     top: -120px;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
   }
   .menu__opened{
     top: 50px;

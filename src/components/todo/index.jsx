@@ -1,13 +1,23 @@
 import React from "react";
 
-function Todo({ todo }) {
+function Todo({ todo, handleDelete, handleCompleted }) {
   return (
-    <li className={"todo__item"} draggable={true} >
+    <li className={"todo__item"} draggable={true}>
       <div className={"todo__text"}>{todo.todoText}</div>
 
       <div className="todo__completed">
-        <input type="checkbox" className={"todo__checkbox"} />
-        <button className="material-icons todo__button">delete_forever</button>
+        <input
+          type="checkbox"
+          className={"todo__checkbox"}
+          checked={todo.completed}
+          onChange={() => handleCompleted(todo.id)}
+        />
+        <button
+          className="material-icons todo__button"
+          onClick={() => handleDelete(todo.todoText)}
+        >
+          delete_forever
+        </button>
       </div>
     </li>
   );

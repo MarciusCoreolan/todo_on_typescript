@@ -1,13 +1,15 @@
 header {
   height: 80px;
-  width: 100%;
   color: #fff;
   background-color: #455f9a;
   display: flex;
   align-items: center;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   z-index: 100;
-  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
   margin-bottom: 40px;
 
   .wrapper {
