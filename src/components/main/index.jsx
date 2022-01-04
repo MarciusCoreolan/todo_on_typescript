@@ -30,9 +30,10 @@ function Main(props) {
       delete: text,
     });
   }
-  const handleCompleted = () =>{
+  const handleCompleted = (id) =>{
     dispatch({
       type: "completed/todo",
+      id: id
     });
   }
 
