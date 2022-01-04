@@ -1,6 +1,6 @@
 import React from "react";
 
-function Input({ holder = 'Текст', type = 'text', onChange, value }) {
+function Input({ holder = "Текст", type = "text", onChange, value }) {
   return (
     <input
       className={`input`}

@@ -8,6 +8,7 @@ const initialState = {
     { todoText: "Создать приложение список дел", completed: true, id: 6 },
   ],
   addNewTodo: false,
+  searchTodo: "",
 };
 export const todoReducer = (state = initialState, action) => {
   switch (action.type) {
@@ -28,6 +29,11 @@ export const todoReducer = (state = initialState, action) => {
       return {
         ...state,
         todos: state.todos.filter((todo) => todo.todoText !== action.delete),
+      };
+    case "search/todo":
+      return {
+        ...state,
+        searchTodo: action.text,
       };
     case "completed/todo":
       return {

@@ -1,4 +1,4 @@
-.todo__item{
+.todo__item {
   background-color: white;
   border-radius: 4px;
   padding: 20px 30px;
@@ -8,22 +8,22 @@
   justify-content: space-between;
   color: #455f9a;
   font-size: 50px;
-  box-shadow: 0 3px 3px 0 rgba(0,0,0,.3);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
   margin: 0 auto 5px;
 
-  &:hover{
+  &:hover {
     width: 1010px;
-    transition: .5s;
+    transition: 0.5s;
   }
 
-  .todo__text{
+  .todo__text {
     font-size: 25px;
   }
-  .todo__completed{
+  .todo__completed {
     display: flex;
     align-items: center;
 
-    .todo__checkbox{
+    .todo__checkbox {
       width: 25px;
       height: 25px;
       cursor: pointer;
@@ -35,12 +35,12 @@
       border: none;
       margin-left: 5px;
       font-size: 30px;
-      &:hover{
+      &:hover {
         color: red;
       }
     }
   }
-  .todo__complete{
-    text-decoration: line-through
+  .todo__complete {
+    text-decoration: line-through;
   }
 }

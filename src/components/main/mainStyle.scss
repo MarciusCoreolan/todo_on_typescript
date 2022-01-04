@@ -1,7 +1,8 @@
-main{
+main {
   padding-top: 105px;
   padding-bottom: 30px;
-  .drop__menu__window{
+
+  .drop__menu__window {
     position: fixed;
     width: 500px;
     height: 200px;
@@ -10,7 +11,7 @@ main{
     transition: 0.5s;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
   }
-  .drop__menu__window_content{
+  .drop__menu__window_content {
     width: 100%;
     height: 100%;
     padding: 60px 30px 20px 30px;
@@ -20,7 +21,7 @@ main{
     border-radius: 0 0 50px 50px;
     text-align: center;
 
-    button{
+    button {
       margin-top: 20px;
       border: 1px solid #ffffff;
       padding: 10px 20px;
@@ -29,8 +30,8 @@ main{
       color: white;
       cursor: pointer;
 
-      &:hover{
-        transition: .3s;
+      &:hover {
+        transition: 0.3s;
         border: 1px solid #b6b6b6;
       }
     }
@@ -55,18 +56,18 @@ main{
       color: white;
     }
   }
-  .menu__closed{
+  .menu__closed {
     top: -120px;
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.3);
   }
-  .menu__opened{
+  .menu__opened {
     top: 50px;
   }
-  .button_up{
+  .button_up {
     transform: rotate(180deg);
     transition: 0.5s;
   }
-  .button_down{
+  .button_down {
     transition: 0.5s;
   }
 }

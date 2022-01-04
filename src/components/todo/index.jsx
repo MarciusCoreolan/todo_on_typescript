@@ -3,8 +3,8 @@ import React from "react";
 function Todo({ todo, handleDelete, handleCompleted }) {
   return (
     <li className={"todo__item"} draggable={true}>
-      <div className={`todo__text ${todo.completed && 'todo__complete'}`}>
-          {todo.todoText}
+      <div className={`todo__text ${todo.completed && "todo__complete"}`}>
+        {todo.todoText}
       </div>
 
       <div className="todo__completed">
