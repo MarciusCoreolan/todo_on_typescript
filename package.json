@@ -2,11 +2,12 @@
   "name": "todo_list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/MarciusCoreolan.github.io/Todo",
+  "homepage": "https://github.com/MarciusCoreolan.github.io/todo",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
@@ -45,7 +46,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
     "prettier": "^2.5.1"
   }
 }
