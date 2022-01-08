@@ -24,4 +24,4 @@ prettier.
 
 ### npm start
   
-### Демо https://todo3333.herokuapp.com
+### Демо https://todoOnTypescript3333.herokuapp.com
