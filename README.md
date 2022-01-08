@@ -1,5 +1,5 @@
 # Список дел
-Приложение список дел
+Приложение список дел на typeScript
 
 ## Функционал
 1) Вывод спписка задач,
@@ -12,6 +12,7 @@
 html,
 scss,
 js,
+typeScript,
 redux,
 react-redux,
 redux-thunk,
