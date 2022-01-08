@@ -22,6 +22,7 @@ prettier.
 ## Запуск
 Приложение запускается на 3000 порте.
 
-### npm start
-  
-### Демо https://todoOnTypescript3333.herokuapp.com
+1 команда
+### npm run build
+2 команда
+### npm run start
