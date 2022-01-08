@@ -1,16 +1,18 @@
 import React from "react";
 import Input from "../input/Input";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import {useTypeSelector} from "../../hooks/useTypeSelector";
 
-function Header(props) {
+function Header() {
   const dispatch = useDispatch();
-  const searchTodo = useSelector((state) => state.searchTodo);
-  const handleSearch = (text) => {
+  const searchTodo = useTypeSelector((state) => state.searchTodo);
+  const handleSearch = (text:string) => {
     dispatch({
       type: "search/todo",
-      text: text,
+      payload: text,
     });
   };
+
   return (
     <header>
       <div className="wrapper">

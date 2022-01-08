@@ -1,26 +1,28 @@
 import React, { useState } from "react";
 import Input from "../input/Input";
-import { useDispatch, useSelector } from "react-redux";
-import { useRandomId } from "../../hooks/useRandomId";
+import { useDispatch } from "react-redux";
+import {useTypeSelector} from "../../hooks/useTypeSelector";
+import {useRandomId} from "../../hooks/useRandomId";
+import {ActionTypes} from "../../types/types";
 
-function DropWindow(props) {
-  const addNewTodo = useSelector((state) => state.addNewTodo);
+function DropWindow() {
+  const addNewTodo = useTypeSelector((state) => state.addNewTodo);
   const randomId = useRandomId;
   const [newTodo, setNewTodo] = useState("");
   const dispatch = useDispatch();
 
   const handleOpen = () => {
-    dispatch({ type: "window/open/close" });
+    dispatch({ type: ActionTypes.WINDOW_OPEN_CLOSE });
   };
 
   const handleAdd = () => {
     dispatch({
-      type: "add/new/todo",
-      payload: newTodo,
-      id: randomId(),
-    });
+      type: ActionTypes.ADD_NEW_TODO,
+      payload: {todo:newTodo, id:randomId()},
+    })
     setNewTodo("");
   };
+
   return (
     <div
       className={`drop__menu__window 
