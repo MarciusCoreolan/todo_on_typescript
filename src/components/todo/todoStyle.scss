@@ -42,13 +42,14 @@
   }
   .todo__complete {
     text-decoration: line-through;
+    color: gray;
   }
 }
-.todo_view{
+.todo_view {
   transform: rotate(40deg);
   transition: 3s;
 }
-.todo_delete{
+.todo_delete {
   transform: translateX(1500px);
   opacity: 0;
   transition: 5s;
