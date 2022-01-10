@@ -1,9 +1,9 @@
 import React from "react";
-import {Itodo} from "../../types/types";
+import { Itodo } from "../../types/componentTypes";
 
-function Todo({ todo, handleDelete, handleCompleted, delAnim }:Itodo) {
+function Todo({ todo, handleDelete, handleCompleted, delAnim }: Itodo) {
   return (
-    <li className={`todo__item ${delAnim === todo.id && 'todo_delete'}`} >
+    <li className={`todo__item ${delAnim === todo.id && "todo_delete"}`}>
       <div className={`todo__text ${todo.completed && "todo__complete"}`}>
         {todo.todoText}
       </div>

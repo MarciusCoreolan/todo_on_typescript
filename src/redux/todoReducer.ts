@@ -1,19 +1,22 @@
-import {actionCreatorType, ActionTypes, IState} from "../types/types";
+import { todoActionType, ActionTypes, IState } from "../types/todoTypes";
 
 const initialState: IState = {
   todos: [
-    { todoText: "Купить яблоки", completed: false, id: '1' },
-    { todoText: "Купить груши", completed: true, id: '2' },
-    { todoText: "Купить арбузы", completed: false, id: '3' },
-    { todoText: "Купить молоко", completed: false, id: '4' },
-    { todoText: "Устроиться на работу", completed: false, id: '5' },
-    { todoText: "Создать приложение список дел", completed: true, id: '6' },
+    { todoText: "Купить яблоки", completed: false, id: "1" },
+    { todoText: "Купить груши", completed: true, id: "2" },
+    { todoText: "Купить арбузы", completed: false, id: "3" },
+    { todoText: "Купить молоко", completed: false, id: "4" },
+    { todoText: "Устроиться на работу", completed: false, id: "5" },
+    { todoText: "Создать приложение список дел", completed: true, id: "6" },
   ],
   addNewTodo: false,
   searchTodo: "",
 };
 
-export const todoReducer = (state = initialState, action: actionCreatorType): IState => {
+export const todoReducer = (
+  state = initialState,
+  action: todoActionType
+): IState => {
   switch (action.type) {
     case ActionTypes.WINDOW_OPEN_CLOSE:
       return {

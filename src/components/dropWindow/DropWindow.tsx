@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import Input from "../input/Input";
 import { useDispatch } from "react-redux";
-import {useTypeSelector} from "../../hooks/useTypeSelector";
-import {useRandomId} from "../../hooks/useRandomId";
-import {ActionTypes} from "../../types/types";
+import { useTypeSelector } from "../../hooks/useTypeSelector";
+import { useRandomId } from "../../hooks/useRandomId";
+import { ActionTypes } from "../../types/todoTypes";
+import Button from "../button/Button";
 
 function DropWindow() {
-  const addNewTodo = useTypeSelector((state) => state.addNewTodo);
+  const addNewTodo = useTypeSelector((state) => state.todo.addNewTodo);
   const randomId = useRandomId;
   const [newTodo, setNewTodo] = useState("");
   const dispatch = useDispatch();
@@ -18,8 +19,8 @@ function DropWindow() {
   const handleAdd = () => {
     dispatch({
       type: ActionTypes.ADD_NEW_TODO,
-      payload: {todo:newTodo, id:randomId()},
-    })
+      payload: { todo: newTodo, id: randomId() },
+    });
     setNewTodo("");
   };
 
@@ -35,7 +36,7 @@ function DropWindow() {
           onChange={setNewTodo}
           value={newTodo}
         />
-        <button onClick={handleAdd}>Добавить</button>
+        <Button text={"Добавить"} handleClick={handleAdd} />
       </div>
       <div className="drop__menu_button" onClick={handleOpen}>
         <span
